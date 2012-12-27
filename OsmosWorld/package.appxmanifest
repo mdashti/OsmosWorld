@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Microsoft.SDKSamples.SampleJavaScriptGame.JS" Version="1.0.0.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  <Properties>
+    <DisplayName>JavaScript and HTML5 touch game sample</DisplayName>
+    <Description>JavaScript and HTML5 touch game sample</Description>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Logo>images\storeLogo-sdk.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-uS" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Osmos World" Logo="images\Osmos_150x150.png" SmallLogo="images\Osmos_30x30.png" Description="The aim of the game is to propel oneself, a single-celled organism (&quot;Mote&quot;), into other smaller motes to absorb them. Colliding with a mote larger than the player will result in being absorbed, resulting in a game over. Changing course is done by expelling mass. Due to conservation of momentum, this results in the player's mote moving away from the expelled mass, but also in one's own mote shrinking." ForegroundText="light" BackgroundColor="#555070">
+        <DefaultTile ShortName="Osmos World" ShowName="logoOnly" WideLogo="images\Osmos_310x150.png" />
+        <SplashScreen Image="images\splash-sdk.png" BackgroundColor="#00b2f0" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <!-- TODO: internetClient capability should be removed if your game does not need to access the internet -->
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
